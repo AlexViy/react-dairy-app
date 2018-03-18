@@ -1,15 +1,13 @@
 .App {
   text-align: center;
+	display: flex;
+	flex-direction: row;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
 
-.App-header {
+.App-side {
   background-color: #222;
-  height: 150px;
+  height: 500px;
   padding: 20px;
   color: white;
 }
@@ -18,11 +16,48 @@
   font-size: 1.5em;
 }
 
-.App-intro {
-  font-size: large;
+.App-main {
+	border: 1px solid red;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.Items {
+	border: 1px solid lightblue;
+  width: 100%;
+  margin: 10px;
+}
+
+.Item {
+  display: flex;
+}
+
+.Comments {
+	border: 1px solid lightblue;
+  width: 100%;
+  margin: 10px;
+}
+
+.Comment {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.Rectangle {
+  background-color: orange;
+  height: 50px;
+  width: 50px;
+}
+
+.NewComment {
+  display: flex;
+  flex-direction: row;
+}
+
+.NewRectangle {
+  border: 1px solid black;
+  height: 50px;
+  width: 50px;
 }
